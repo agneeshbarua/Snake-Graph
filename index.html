@@ -73,9 +73,9 @@
         <h3>Module</h3>
         <select onchange="OnSelectionChange (this)">
         <option value="" disabled="" selected="" style="display:none;">Choose module</option>
-        <option value="ga_res.json"> Module 1 Green</option>
-        <option value="gya_res.json"> Module 2 Green Yellow</option>
-        <option value="lya_res.json"> Module 3 Light Yellow</option>
+        <option value="New green_res.json"> Module 1 Green</option>
+        <option value="New greenyellow_res.json"> Module 2 Green Yellow</option>
+        <option value="New lightyellow_res.json"> Module 3 Light Yellow</option>
         </select>
 
       </div>
@@ -128,8 +128,8 @@ var width = 1200,
         .start();
 
   var colour =d3.scale.category20c()
-        .domain("10","9","8","7","6","5")
-        .range(["#3182bd", "#6baed6", "#9ecae1", "#c6dbef", "#9e9ac8", "#d9d9d9"]);
+        .domain(["5","4","3","2","1",])
+        .range(["#393b79", "#5254a3", "#6b6ecf", "#9c9ede", "6baed6"]);
 
 
 
@@ -150,9 +150,9 @@ var width = 1200,
     // add the nodes
     node.append("circle")
             .attr("class", "node")
-            .attr("r", function(d) {return (d.v*1.5); }) //r of circle nodes based on data.
-            .style("fill", function(d) { return colour(d.v); }) //colour of circle nodes based on data.
-            .style("stroke", "black")
+            .attr("r", function(d) {return 1+Math.log(d.v);})//r of circle nodes based on data.
+            .style("fill", function(d) { return d.colour= colour(d.cd); }) //colour of circle nodes based on data.
+            .style("stroke", function(d) { if (d.group<=0) {return "yellow"};  })
             .on("dblclick", dblclick)
             .call(force.drag);
 
@@ -195,7 +195,7 @@ var width = 1200,
     var padding=3;
 
     var legend = svg.selectAll(".legend")
-        .data([5,6,7,8,9,10])
+        .data(colour.domain())
         .enter().append("g")
         .attr("class", "legend")
         .attr("transform", function (d, i) {
@@ -206,8 +206,8 @@ var width = 1200,
     legend.append("circle")
         .attr("cx", width - 18)
         .attr("cy", 40)
-        .attr("r", function (d) {return (d*2) - padding;})
-        .style("fill", function(d) { return colour(d); })
+        .attr("r", 10)
+        .style("fill", colour)
         .style("stroke", "black");
 
 
@@ -218,14 +218,20 @@ var width = 1200,
         .style("text-anchor", "end")
         .text(function (d) {return d; });
 
+
+
     var legendTitle = svg.selectAll(".legendTitle")
         .data([0])
         .enter().append("g")
-        .append("text")
+        .append('text')
         .attr("class", "legendTitle")
-        .text("10^-1")
+        .text("Rest value ranges")
+        
         .attr("x", width )
         .attr("y", 25);
+
+  
+
 
 
   });
