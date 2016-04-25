@@ -1,167 +1,605 @@
-{"nodes":
-[{"name":"107301955", "group":1, "v": 5},
-{"name":"107298828", "group":1, "v": 5},
-{"name":"107286007", "group":1, "v": 5},
-{"name":"107291354", "group":1, "v": 5},
-{"name":"107293726", "group":1, "v": 5},
-{"name":"107298299", "group":1, "v": 5},
-{"name":"107297785", "group":1, "v": 5},
-{"name":"107298282", "group":1, "v": 5},
-{"name":"107287548", "group":1, "v": 5},
-{"name":"107302977", "group":1, "v": 5},
-{"name":"107287547", "group":1, "v": 5},
-{"name":"107287555", "group":1, "v": 5},
-{"name":"107287552", "group":1, "v": 5},
-{"name":"107298193", "group":1, "v": 5},
-{"name":"107301016", "group":1, "v": 5},
-{"name":"107298300", "group":1, "v": 5},
-{"name":"107298829", "group":1, "v": 5},
-{"name":"107298193", "group":1, "v": 5},
-{"name":"107295484", "group":1, "v": 5},
-{"name":"107293726", "group":1, "v": 5},
-{"name":"107291355", "group":1, "v": 5},
-{"name":"107291353", "group":1, "v": 5},
-{"name":"107285463", "group":1, "v": 5},
-{"name":"107298284", "group":1, "v": 5},
-{"name":"107296982", "group":1, "v": 5},
-{"name":"107291631", "group":1, "v": 5},
-{"name":"107298284", "group":1, "v": 5},
-{"name":"107298285", "group":1, "v": 5},
-{"name":"107287167", "group":1, "v": 5},
-{"name":"107287557", "group":1, "v": 5},
-{"name":"107287546", "group":1, "v": 5},
-{"name":"107298297", "group":1, "v": 5},
-{"name":"107298828", "group":1, "v": 5},
-{"name":"107298285", "group":1, "v": 5},
-{"name":"107287557", "group":1, "v": 5},
-{"name":"107287553", "group":1, "v": 5},
-{"name":"107301884", "group":1, "v": 5},
-{"name":"107296979", "group":1, "v": 5},
-{"name":"107286306", "group":1, "v": 6},
-{"name":"107291353", "group":1, "v": 6},
-{"name":"107284058", "group":1, "v": 6},
-{"name":"107287546", "group":1, "v": 6},
-{"name":"107291354", "group":1, "v": 6},
-{"name":"107287552", "group":1, "v": 6},
-{"name":"107298282", "group":1, "v": 6},
-{"name":"107301016", "group":1, "v": 6},
-{"name":"107298300", "group":1, "v": 6},
-{"name":"107302977", "group":1, "v": 6},
-{"name":"107291352", "group":1, "v": 6},
-{"name":"107300935", "group":1, "v": 7},
-{"name":"107298299", "group":1, "v": 7},
-{"name":"107294831", "group":1, "v": 9},
-{"name":"107301391", "group":1, "v": 9},
-{"name":"107296284", "group":1, "v": 9},
-{"name":"107301377", "group":1, "v": 9},
-{"name":"107295975", "group":1, "v": 9},
-{"name":"107292818", "group":1, "v": 9},
-{"name":"107288359", "group":1, "v": 9},
-{"name":"107299576", "group":1, "v": 9},
-{"name":"107299576", "group":1, "v": 9},
-{"name":"107288195", "group":1, "v": 10},
-{"name":"107297155", "group":1, "v": 10},
-{"name":"107294831", "group":1, "v": 10}
-], "links": 
-[{"source":0, "target":1,"value":0},
-{"source":2, "target":3,"value":0},
-{"source":4, "target":5,"value":0},
-{"source":6, "target":7,"value":0},
-{"source":8, "target":3,"value":0},
-{"source":0, "target":9,"value":0},
-{"source":10, "target":11,"value":0},
-{"source":12, "target":9,"value":0},
-{"source":13, "target":14,"value":0},
-{"source":15, "target":16,"value":0},
-{"source":8, "target":17,"value":0},
-{"source":18, "target":19,"value":0},
-{"source":10, "target":9,"value":0},
-{"source":20, "target":21,"value":0},
-{"source":22, "target":23,"value":0},
-{"source":13, "target":23,"value":0},
-{"source":6, "target":24,"value":0},
-{"source":25, "target":23,"value":0},
-{"source":26, "target":9,"value":0},
-{"source":8, "target":19,"value":0},
-{"source":27, "target":28,"value":0},
-{"source":15, "target":23,"value":0},
-{"source":10, "target":29,"value":0},
-{"source":30, "target":31,"value":0},
-{"source":18, "target":23,"value":0},
-{"source":32, "target":33,"value":0},
-{"source":15, "target":5,"value":0},
-{"source":18, "target":33,"value":0},
-{"source":34, "target":35,"value":0},
-{"source":26, "target":19,"value":0},
-{"source":6, "target":36,"value":0},
-{"source":37, "target":16,"value":0},
-{"source":26, "target":38,"value":0},
-{"source":39, "target":38,"value":0},
-{"source":32, "target":14,"value":0},
-{"source":15, "target":9,"value":0},
-{"source":40, "target":9,"value":0},
-{"source":10, "target":41,"value":0},
-{"source":34, "target":9,"value":0},
-{"source":27, "target":5,"value":0},
-{"source":42, "target":23,"value":0},
-{"source":32, "target":23,"value":0},
-{"source":8, "target":31,"value":0},
-{"source":30, "target":43,"value":0},
-{"source":32, "target":31,"value":0},
-{"source":26, "target":14,"value":0},
-{"source":44, "target":9,"value":0},
-{"source":8, "target":41,"value":0},
-{"source":25, "target":38,"value":0},
-{"source":45, "target":5,"value":0},
-{"source":45, "target":28,"value":0},
-{"source":44, "target":16,"value":0},
-{"source":42, "target":38,"value":0},
-{"source":32, "target":46,"value":0},
-{"source":27, "target":9,"value":0},
-{"source":44, "target":5,"value":0},
-{"source":42, "target":21,"value":0},
-{"source":44, "target":23,"value":0},
-{"source":0, "target":33,"value":0},
-{"source":47, "target":19,"value":0},
-{"source":8, "target":23,"value":0},
-{"source":30, "target":29,"value":0},
-{"source":30, "target":35,"value":0},
-{"source":0, "target":19,"value":0},
-{"source":32, "target":7,"value":0},
-{"source":8, "target":33,"value":0},
-{"source":20, "target":48,"value":0},
-{"source":12, "target":35,"value":0},
-{"source":13, "target":49,"value":0},
-{"source":8, "target":9,"value":0},
-{"source":8, "target":29,"value":0},
-{"source":26, "target":5,"value":0},
-{"source":26, "target":31,"value":0},
-{"source":15, "target":19,"value":0},
-{"source":47, "target":31,"value":0},
-{"source":44, "target":19,"value":0},
-{"source":27, "target":31,"value":0},
-{"source":27, "target":19,"value":0},
-{"source":50, "target":31,"value":0},
-{"source":15, "target":33,"value":0},
-{"source":34, "target":11,"value":0},
-{"source":26, "target":28,"value":0},
-{"source":4, "target":31,"value":0},
-{"source":30, "target":9,"value":0},
-{"source":44, "target":33,"value":0},
-{"source":26, "target":33,"value":0},
-{"source":0, "target":31,"value":0},
-{"source":15, "target":31,"value":0},
-{"source":0, "target":7,"value":0},
-{"source":32, "target":5,"value":0},
-{"source":44, "target":31,"value":0},
-{"source":0, "target":46,"value":0},
-{"source":15, "target":7,"value":0},
-{"source":51, "target":52,"value":0},
-{"source":53, "target":52,"value":0},
-{"source":54, "target":55,"value":0},
-{"source":56, "target":57,"value":0},
-{"source":56, "target":58,"value":0},
-{"source":59, "target":57,"value":0},
-{"source":60, "target":61,"value":0},
-{"source":53, "target":62,"value":0}
-]}
+{
+	"nodes": [{
+		"name": "gelectin-1-like",
+		"cd": 3,
+		"group": 1,
+		"v": 30.074
+	}, {
+		"name": "Zinc mettaloproteinase-disintegrin-like bastroxstatin-3",
+		"cd": 3,
+		"group": 0,
+		"v": 1561.806
+	}, {
+		"name": "Snake venome Serine proteinase 3-like",
+		"cd": 2,
+		"group": 0,
+		"v": 2203.645333
+	}, {
+		"name": "Snake venome Serine proteinase 11",
+		"cd": 4,
+		"group": 0,
+		"v": 1149.258
+	}, {
+		"name": "Zinc mettaloproteinase/disintegrin",
+		"cd": 4,
+		"group": 0,
+		"v": 13249.37067
+	}, {
+		"name": "Toll like receptor2",
+		"cd": 1,
+		"group": 1,
+		"v": 8.3836666
+	}, {
+		"name": "SLAM family member 8-like",
+		"cd": 1,
+		"group": 1,
+		"v": 1.438
+	}, {
+		"name": "Zinc metalloproteinase-disintegrin-like",
+		"cd": 4,
+		"group": 0,
+		"v": 17209.37633
+	}, {
+		"name": "Zinc metalloproteinase-disintegrin-like HR1a",
+		"cd": 4,
+		"group": 0,
+		"v": 768.4913333
+	}, {
+		"name": "Zinc metalloproteinase-disintegrin-like HR1a",
+		"cd": 4,
+		"group": 0,
+		"v": 768.4913333
+	}, {
+		"name": "Snake venom metalloproteinase ACLF-like",
+		"cd": 4,
+		"group": 1,
+		"v": 362.512667
+	}, {
+		"name": "Zinc metalloproteinase/disintegrin-like HR1a",
+		"cd": 4,
+		"group": 1,
+		"v": 585.822
+	}, {
+		"name": "Zinc metalloproteinase-disintegrin-like",
+		"cd": 5,
+		"group": 0,
+		"v": 5428.592
+	}, {
+		"name": "Snake venom vascular endothelial growth factor toxin",
+		"cd": 4,
+		"group": 0,
+		"v": 778.162333
+	}, {
+		"name": "Basic phospholipase A2 homolog G6K49-like",
+		"cd": 4,
+		"group": 1,
+		"v": 43.27533333
+	}, {
+		"name": "Zinc metalloproteinase-disintegrin-like ACLD",
+		"cd": 5,
+		"group": 0,
+		"v": 1304.781667
+	}, {
+		"name": "Zinc metalloproteinase-disintegrin-like ACLD",
+		"cd": 5,
+		"group": 0,
+		"v": 1304.781667
+	}, {
+		"name": "Collagen alpha-2(I) chain-like",
+		"cd": 4,
+		"group": 0,
+		"v": 150.2453333
+	}, {
+		"name": "cadherin EGF LAG seven-pass G-type receptor 3-like",
+		"cd": 3,
+		"group": 1,
+		"v": 9.4296667
+	}, {
+		"name": "Basic phospholipase A2 trimucrotoxin",
+		"cd": 3,
+		"group": 0,
+		"v": 15558.601
+	}, {
+		"name": "Zinc metalloproteinase-disintegrin-like HV1",
+		"cd": 5,
+		"group": 0,
+		"v": 2127.136667
+	}, {
+		"name": "Snake venom serine protease-like",
+		"cd": 4,
+		"group": 0,
+		"v": 3139.265
+	}, {
+		"name": "Beta fibrinogenase mucrofibrase-3",
+		"cd": 4,
+		"group": 0,
+		"v": 28052.49367
+	}, {
+		"name": "Snake venom serine protease serpentokallikrein-2",
+		"cd": 4,
+		"group": 0,
+		"v": 18566.82367
+	}, {
+		"name": "Zinc metalloproteinase-disintegrin-like HR1b",
+		"cd": 5,
+		"group": 1492.572333,
+		"v": 5
+	}, {
+		"name": "Zinc metalloproteinase-disintegrin-like VMP-III",
+		"cd": 4,
+		"group": 0,
+		"v": 1302.287667
+	}, {
+		"name": "Acidic phospholipase A2 I",
+		"cd": 3,
+		"group": 0,
+		"v": 4849.110667
+	}, {
+		"name": "Basic phospholipase A2 homolog G6K49-like",
+		"cd": 4,
+		"group": 1,
+		"v": 43.27533333
+	}, {
+		"name": "cytochrome P450 2C20-like",
+		"cd": 4,
+		"group": 1,
+		"v": 153.986667
+	}, {
+		"name": "cytochrome P450 2C5-like",
+		"cd": 4,
+		"group": 1,
+		"v": 121.535333
+	}, {
+		"name": "Zinc metalloproteinase-disintegrin-like",
+		"cd": 5,
+		"group": 0,
+		"v": 29552.86167
+	}, {
+		"name": "Zinc metalloproteinase-disintegrin-like HR1b",
+		"cd": 4,
+		"group": 1,
+		"v": 1492.57333
+	}, {
+		"name": "Zinc metalloproteinase-disintegrin-like HF3",
+		"cd": 4,
+		"group": 0,
+		"v": 194.4556667
+	}, {
+		"name": "Transmembrane protease serine 9-like",
+		"cd": 3,
+		"group": 0,
+		"v": 1371.007333
+	}, {
+		"name": "Transmembrane protease serine 9-like",
+		"cd": 3,
+		"group": 0,
+		"v": 1371.007333
+	}, {
+		"name": "Zinc metalloproteinase-disintegrin jerdonotin-like",
+		"cd": 3,
+		"group": 1,
+		"v": 5
+	}, {
+		"name": "Zinc metalloproteinase-disintegrin-like bastroxstatin-3",
+		"cd": 3,
+		"group": 0,
+		"v": 1561.806
+	}, {
+		"name": "Basic phospholipase A2 trimucrotoxin",
+		"cd": 2,
+		"group": 0,
+		"v": 15558.601
+	}, {
+		"name": "Snake venom serine protease 3-like",
+		"cd": 2,
+		"group": 0,
+		"v": 2203.645333
+	}, {
+		"name": "Zinc metalloproteinase-disintegrin-like HV1",
+		"cd": 4,
+		"group": 0,
+		"v": 2127.136667
+	}, {
+		"name": "Basic phospholipase A2 homolog G6K49",
+		"cd": 5,
+		"group": 0,
+		"v": 23766.12267
+	}, {
+		"name": "Beta fibrinogenase mucrofibrase-3",
+		"cd": 3,
+		"group": 0,
+		"v": 28052.49367
+	}, {
+		"name": "Zinc metalloproteinase-disintegrin-like HR1a",
+		"cd": 4,
+		"group": 1,
+		"v": 585.8
+	}, {
+		"name": "Zinc metalloproteinase-disintegrin",
+		"cd": 4,
+		"group": 0,
+		"v": 13249.37067
+	}, {
+		"name": "Zinc metalloproteinase-disintegrin-like",
+		"cd": 5,
+		"group": 0,
+		"v": 29552.86167
+	}, {
+		"name": "paired like homeodomain 3",
+		"cd": 3,
+		"group": 1,
+		"v": 0.17033
+	}, {
+		"name": "Vacuolar protein sorting-associated protein 28 homolog",
+		"cd": 1,
+		"group": 1,
+		"v": 0.247
+	}, {
+		"name": "Sulfotransferase 1C2-like",
+		"cd": 1,
+		"group": 1,
+		"v": 0.86466667
+	}, {
+		"name": "Ubiquitin-protein ligase DTX4",
+		"cd": 3,
+		"group": 1,
+		"v": 0.092
+	}, {
+		"name": "cyclin-dependent kinase 2 associated protein",
+		"cd": 3,
+		"group": 1,
+		"v": 0.0143333
+	}, {
+		"name": "chromodomain protein Y-like 2",
+		"cd": 2,
+		"group": 1,
+		"v": 0.227
+	}, {
+		"name": "Olfactory receptor 5V1-like",
+		"cd": 1,
+		"group": 1,
+		"v": 0.06266667
+	}, {
+		"name": "paired like homeodomain 3",
+		"cd": 3,
+		"group": 1,
+		"v": 0.170330
+	}],
+	"links": [{
+		"source": 0,
+		"target": 1,
+		"value": 0
+	}, {
+		"source": 2,
+		"target": 1,
+		"value": 0
+	}, {
+		"source": 3,
+		"target": 4,
+		"value": 0
+	}, {
+		"source": 5,
+		"target": 6,
+		"value": 0
+	}, {
+		"source": 7,
+		"target": 8,
+		"value": 0
+	}, {
+		"source": 9,
+		"target": 10,
+		"value": 0
+	}, {
+		"source": 7,
+		"target": 4,
+		"value": 0
+	}, {
+		"source": 11,
+		"target": 12,
+		"value": 0
+	}, {
+		"source": 13,
+		"target": 4,
+		"value": 0
+	}, {
+		"source": 14,
+		"target": 15,
+		"value": 0
+	}, {
+		"source": 16,
+		"target": 17,
+		"value": 0
+	}, {
+		"source": 18,
+		"target": 12,
+		"value": 0
+	}, {
+		"source": 16,
+		"target": 8,
+		"value": 0
+	}, {
+		"source": 13,
+		"target": 19,
+		"value": 0
+	}, {
+		"source": 3,
+		"target": 20,
+		"value": 0
+	}, {
+		"source": 7,
+		"target": 1,
+		"value": 0
+	}, {
+		"source": 2,
+		"target": 20,
+		"value": 0
+	}, {
+		"source": 2,
+		"target": 15,
+		"value": 0
+	}, {
+		"source": 21,
+		"target": 22,
+		"value": 0
+	}, {
+		"source": 21,
+		"target": 23,
+		"value": 0
+	}, {
+		"source": 24,
+		"target": 12,
+		"value": 0
+	}, {
+		"source": 25,
+		"target": 8,
+		"value": 0
+	}, {
+		"source": 26,
+		"target": 17,
+		"value": 0
+	}, {
+		"source": 13,
+		"target": 27,
+		"value": 0
+	}, {
+		"source": 28,
+		"target": 29,
+		"value": 0
+	}, {
+		"source": 0,
+		"target": 27,
+		"value": 0
+	}, {
+		"source": 25,
+		"target": 20,
+		"value": 0
+	}, {
+		"source": 3,
+		"target": 27,
+		"value": 0
+	}, {
+		"source": 30,
+		"target": 8,
+		"value": 0
+	}, {
+		"source": 3,
+		"target": 31,
+		"value": 0
+	}, {
+		"source": 26,
+		"target": 19,
+		"value": 0
+	}, {
+		"source": 24,
+		"target": 1,
+		"value": 0
+	}, {
+		"source": 25,
+		"target": 32,
+		"value": 0
+	}, {
+		"source": 13,
+		"target": 1,
+		"value": 0
+	}, {
+		"source": 30,
+		"target": 1,
+		"value": 0
+	}, {
+		"source": 21,
+		"target": 33,
+		"value": 0
+	}, {
+		"source": 2,
+		"target": 12,
+		"value": 0
+	}, {
+		"source": 18,
+		"target": 1,
+		"value": 0
+	}, {
+		"source": 30,
+		"target": 4,
+		"value": 0
+	}, {
+		"source": 18,
+		"target": 15,
+		"value": 0
+	}, {
+		"source": 34,
+		"target": 23,
+		"value": 0
+	}, {
+		"source": 25,
+		"target": 10,
+		"value": 0
+	}, {
+		"source": 35,
+		"target": 8,
+		"value": 0
+	}, {
+		"source": 36,
+		"target": 17,
+		"value": 0
+	}, {
+		"source": 37,
+		"target": 17,
+		"value": 0
+	}, {
+		"source": 21,
+		"target": 38,
+		"value": 0
+	}, {
+		"source": 16,
+		"target": 4,
+		"value": 0
+	}, {
+		"source": 14,
+		"target": 1,
+		"value": 0
+	}, {
+		"source": 3,
+		"target": 12,
+		"value": 0
+	}, {
+		"source": 2,
+		"target": 22,
+		"value": 0
+	}, {
+		"source": 3,
+		"target": 38,
+		"value": 0
+	}, {
+		"source": 13,
+		"target": 17,
+		"value": 0
+	}, {
+		"source": 39,
+		"target": 8,
+		"value": 0
+	}, {
+		"source": 14,
+		"target": 17,
+		"value": 0
+	}, {
+		"source": 39,
+		"target": 4,
+		"value": 0
+	}, {
+		"source": 14,
+		"target": 19,
+		"value": 0
+	}, {
+		"source": 39,
+		"target": 1,
+		"value": 0
+	}, {
+		"source": 7,
+		"target": 15,
+		"value": 0
+	}, {
+		"source": 3,
+		"target": 1,
+		"value": 0
+	}, {
+		"source": 2,
+		"target": 33,
+		"value": 0
+	}, {
+		"source": 2,
+		"target": 23,
+		"value": 0
+	}, {
+		"source": 3,
+		"target": 15,
+		"value": 0
+	}, {
+		"source": 26,
+		"target": 40,
+		"value": 0
+	}, {
+		"source": 41,
+		"target": 23,
+		"value": 0
+	}, {
+		"source": 24,
+		"target": 42,
+		"value": 0
+	}, {
+		"source": 3,
+		"target": 33,
+		"value": 0
+	}, {
+		"source": 36,
+		"target": 4,
+		"value": 0
+	}, {
+		"source": 36,
+		"target": 12,
+		"value": 0
+	}, {
+		"source": 16,
+		"target": 12,
+		"value": 0
+	}, {
+		"source": 43,
+		"target": 12,
+		"value": 0
+	}, {
+		"source": 30,
+		"target": 15,
+		"value": 0
+	}, {
+		"source": 39,
+		"target": 15,
+		"value": 0
+	}, {
+		"source": 36,
+		"target": 15,
+		"value": 0
+	}, {
+		"source": 7,
+		"target": 12,
+		"value": 0
+	}, {
+		"source": 30,
+		"target": 12,
+		"value": 0
+	}, {
+		"source": 7,
+		"target": 20,
+		"value": 0
+	}, {
+		"source": 39,
+		"target": 12,
+		"value": 0
+	}, {
+		"source": 7,
+		"target": 44,
+		"value": 0
+	}, {
+		"source": 30,
+		"target": 20,
+		"value": 0
+	}, {
+		"source": 45,
+		"target": 46,
+		"value": 0
+	}, {
+		"source": 47,
+		"target": 46,
+		"value": 0
+	}, {
+		"source": 48,
+		"target": 49,
+		"value": 0
+	}, {
+		"source": 50,
+		"target": 51,
+		"value": 0
+	}, {
+		"source": 47,
+		"target": 52,
+		"value": 0
+	}]
+}
