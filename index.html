@@ -102,10 +102,10 @@ var width = 1200,
 
   
   var force = d3.layout.force()
-      .linkDistance(300)
-      .chargeDistance(350)
-      .gravity(.085)
-      .charge(-300)
+      .linkDistance(60)
+      .chargeDistance(250)
+      .gravity(.1)
+      .charge(-850)
       .size([width, height]);
 
   var drag = force.drag()
@@ -155,9 +155,9 @@ var width = 1200,
     // add the nodes
     node.append("circle")
             .attr("class", "node")
-            .attr("r", function(d) {if (d.v>=10000) {return 8+Math.log(d.v)} else {return 6+Math.log(d.v);} })//r of circle nodes based on data.
+            .attr("r", function(d) {if (d.v>=10000) {return 7.5+Math.log(d.v)} else {return 6+Math.log(d.v);} })//r of circle nodes based on data.
             .style("fill", function(d) { return d.colour= colour(d.cd); }) //colour of circle nodes based on data.
-            .style("stroke", function(d) { if (d.group<=0) {return "black"};  })
+            .style("stroke", function(d) { if (d.group<=0) {return "red"};  })
             .style("stroke-width", 1.5)
             .on("dblclick", dblclick)
             .call(force.drag);
