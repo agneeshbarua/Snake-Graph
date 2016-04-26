@@ -62,7 +62,12 @@
     <li>XXXXXXXXX </li>
     <li> XXXXXXXXXX </li>
     <li> XXXXXXXXXX </li>
-    <li> XXXXXXXXX
+    <li> The values for Rest, were grouped into five ranges:</li>
+    <li>1=(-2.00 to -1.51)</li>
+    <li>2=(-1.50 to -1.01)</li>
+    <li>3=(-1.00 to -0.51)</li>
+    <li>4=(-0.50 to -0.01)</li>
+    <li>5=(0 to 0.5)</li>
     </li></ul>
 
     </header>
@@ -97,9 +102,9 @@ var width = 1200,
 
   
   var force = d3.layout.force()
-      .linkDistance(200)
-      .chargeDistance(300)
-      .gravity(.1)
+      .linkDistance(300)
+      .chargeDistance(350)
+      .gravity(.085)
       .charge(-300)
       .size([width, height]);
 
@@ -129,7 +134,7 @@ var width = 1200,
 
   var colour =d3.scale.category20c()
         .domain(["5","4","3","2","1",])
-        .range(["#393b79", "#5254a3", "#6b6ecf", "#9c9ede", "6baed6"]);
+        .range(["#393b79", "#5254a3", "#6b6ecf", "#9c9ede", "#c6dbef"]);
 
 
 
@@ -150,9 +155,10 @@ var width = 1200,
     // add the nodes
     node.append("circle")
             .attr("class", "node")
-            .attr("r", function(d) {return 1+Math.log(d.v);})//r of circle nodes based on data.
+            .attr("r", function(d) {if (d.v>=10000) {return 8+Math.log(d.v)} else {return 6+Math.log(d.v);} })//r of circle nodes based on data.
             .style("fill", function(d) { return d.colour= colour(d.cd); }) //colour of circle nodes based on data.
-            .style("stroke", function(d) { if (d.group<=0) {return "yellow"};  })
+            .style("stroke", function(d) { if (d.group<=0) {return "black"};  })
+            .style("stroke-width", 1.5)
             .on("dblclick", dblclick)
             .call(force.drag);
 
