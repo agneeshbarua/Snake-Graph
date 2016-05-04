@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
  <head>
@@ -8,36 +10,41 @@
              stroke: #BAC0C0;
              stroke-width: 1.5px;
 }
-
             .node {
              fill: #1f77b4;
 }
-
-
             .node.fixed {
              fill: #f00;
 }
-
         text.nodetext {
              fill: black;
              font: 20px sans-serif;
 }
-
             .node:not(:hover) .nodetext {
               display: none;
 }
-
        text.legendtext {
             fill: black;
             font: 20px sans-serif;
 }
 
+       text.legend2text {
+            fill: black;
+            font: 20px sans-serif;
+}
             
 }
-
       ul {width: 800px; }
 
+
       text.legendTitle {
+         font: 20px sans-serif;
+         font-weight: bold;
+           fill: black;
+           text-anchor: end;
+}
+
+text.legendTitle2 {
          font: 20px sans-serif;
          font-weight: bold;
            fill: black;
@@ -62,12 +69,7 @@
     <li>XXXXXXXXX </li>
     <li> XXXXXXXXXX </li>
     <li> XXXXXXXXXX </li>
-    <li> The values for Rest, were grouped into five ranges:</li>
-    <li>1=(-2.00 to -1.51)</li>
-    <li>2=(-1.50 to -1.01)</li>
-    <li>3=(-1.00 to -0.51)</li>
-    <li>4=(-0.50 to -0.01)</li>
-    <li>5=(0 to 0.5)</li>
+    
     </li></ul>
 
     </header>
@@ -89,17 +91,13 @@
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
-
 // get selection
 function OnSelectionChange (select) {
   var selectedOption = select.options[select.selectedIndex];
-
   // remove any previous plot
 d3.select("svg").remove();
 var width = 1200,
     height = 800;
-
-
   
   var force = d3.layout.force()
       .linkDistance(60)
@@ -107,50 +105,40 @@ var width = 1200,
       .gravity(.1)
       .charge(-850)
       .size([width, height]);
-
   var drag = force.drag()
       .on("dragstart", dragstart);
-
   // undo fix with double click
   function dblclick(d) {
     d3.select(this).classed("fixed", d.fixed = false);
   }
-
   // fix node by dragging
   function dragstart(d) {
     d3.select(this).classed("fixed", d.fixed = true);
   }
-
   var svg = d3.select("body").append("svg")
       .attr("width", width)
       .attr("height", height);
-
   d3.json(selectedOption.value, function(error, graph) {
-
     force
         .nodes(graph.nodes)
         .links(graph.links)
         .start();
-
   var colour =d3.scale.category20c()
         .domain(["5","4","3","2","1",])
         .range(["#393b79", "#5254a3", "#6b6ecf", "#9c9ede", "#c6dbef"]);
-
-
-
+   
     var link = svg.selectAll(".link")
         .data(graph.links)
         .enter().append("line")
         .attr("class", "link");
         
-
     var node = svg.selectAll(".node")
         .data(graph.nodes)
         .enter().append("g")
         .attr("class", "node")
         .call(force.drag)
         .on("dblclick", dblclick);
-
+   
     // adding the nodes
     node.append("circle")
             .attr("class", "node")
@@ -160,22 +148,21 @@ var width = 1200,
             .style("stroke-width", 1.5)
             .on("dblclick", dblclick)
             .call(force.drag);
-
-
+   
     // adding text
     node.append("text")
         .attr("class", "nodetext")
         .attr("x", 15)
         .attr("dy", ".35em")
         .text(function(d) { return d.name; });
-
     force.on("tick", function() {
+   
         // Updating the links
         link.attr("x1", function(d) { return d.source.x; })
           .attr("y1", function(d) { return d.source.y; })
           .attr("x2", function(d) { return d.target.x; })
           .attr("y2", function(d) { return d.target.y; });
-
+   
         // Translate the groups
         node.attr("transform", function(d) {
           return 'translate(' + [d.x, d.y] + ')';
@@ -189,42 +176,46 @@ var width = 1200,
           return '#BAC0C0';
         });
     });
-
+   
     // Set the stroke width back to normal when mouse leaves the node.
     node.on('mouseout', function() {
       link.style('stroke', '#BAC0C0');
     });
-
-
     // Add a legend for the size of the circles
+   var dataSet = [
+      {"legendLabel":"-2.00 to -1.51", "magnitude":"<1", "colour":"#c6dbef","radius":10}, 
+      {"legendLabel":"-1.50 to -1.01", "magnitude":"<10", "colour":"#9c9ede","radius":100}, 
+      {"legendLabel":"-1.00 to -0.51", "magnitude":"<100", "colour":"#6b6ecf","radius":10000}, 
+      {"legendLabel":"-0.50 to -0.01", "magnitude":"<1000", "colour":"#5254a3","radius":100000}, 
+      {"legendLabel":"0.00 to 0.50", "magnitude":"<10000", "colour": "#393b79","radius":10000000}, 
+      ];
+
+
     var padding=3; //use padding between circles if needed
+   
 
     var legend = svg.selectAll(".legend")
-        .data(colour.domain())
+        .data(dataSet)
         .enter().append("g")
         .attr("class", "legend")
         .attr("transform", function (d, i) {
-        return "translate(0," + i * 20 + ")";
+        return "translate(0," + i * 25 + ")";
     });
     
-
     legend.append("circle")
         .attr("cx", width - 18)
         .attr("cy", 40)
         .attr("r", 10)
-        .style("fill", colour)
+        .style("fill", function(d) {return d.colour; })
         .style("stroke", "black");
-
-
+   
     legend.append("text")
         .attr("class", "legendtext")
         .attr("x", width - 32)
         .attr("y", 45)
         .style("text-anchor", "end")
-        .text(function (d) {return d; });
-
-
-
+        .text(function (d) {return d.legendLabel; });
+   
     var legendTitle = svg.selectAll(".legendTitle")
         .data([0])
         .enter().append("g")
@@ -234,10 +225,43 @@ var width = 1200,
         
         .attr("x", width )
         .attr("y", 25);
-
   
 
 
+    var legend2 = svg.selectAll(".legend2")
+        .data(dataSet)
+        .enter().append("g")
+        .attr("class", "legend")
+        .attr("transform", function (d, i) {
+        return "translate(0," + i * 30 + ")";
+  
+
+             })
+
+      legend2.append('circle')
+        .attr("cx", width - 18)
+        .attr("cy", 200)
+        .attr("r", function(d){return Math.log(d.radius); })
+        .attr("padding",5)
+        .style("fill", function(d) {return d.colour; })
+        .style("stroke", "black");
+
+      legend2.append("text")
+        .attr("class", "legend2text")
+        .attr("x", width - 35)
+        .attr("y", 210)
+        .style("text-anchor", "end")
+        .text(function (d) {return d.magnitude; });
+
+    var legendTitle = svg.selectAll(".legendTitle2")
+        .data([0])
+        .enter().append("g")
+        .append('text')
+        .attr("class", "legendTitle")
+        .text("fpkm")
+        
+        .attr("x", width )
+        .attr("y", 186);
 
   });
 };
@@ -255,3 +279,5 @@ var width = 1200,
         } catch(err) {}
       </script>
 </body>
+
+    
