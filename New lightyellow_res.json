@@ -122,8 +122,8 @@
 	}, {
 		"name": "Zinc metalloproteinase-disintegrin-like HR1b",
 		"cd": 5,
-		"group": 1492.572333,
-		"v": 5
+		"group": 0,
+		"v": 1492.57233333333
 	}, {
 		"name": "Zinc metalloproteinase-disintegrin-like VMP-III",
 		"cd": 4,
