@@ -35,7 +35,7 @@
 		"group": 1,
 		"v": 1.438
 	}, {
-		"name": "Zinc metalloproteinase-disintegrin-like",
+		"name": "Zinc metalloproteinase/disintegrin-like",
 		"cd": 4,
 		"group": 0,
 		"v": 17209.37633
@@ -55,12 +55,12 @@
 		"group": 1,
 		"v": 362.512667
 	}, {
-		"name": "Zinc metalloproteinase/disintegrin-like HR1a",
+		"name": "Zinc metalloproteinase-disintegrin-like HR1a",
 		"cd": 4,
 		"group": 1,
 		"v": 585.822
 	}, {
-		"name": "Zinc metalloproteinase-disintegrin-like",
+		"name": "Zinc metalloproteinase/disintegrin-like",
 		"cd": 5,
 		"group": 0,
 		"v": 5428.592
@@ -215,7 +215,7 @@
 		"group": 1,
 		"v": 585.8
 	}, {
-		"name": "Zinc metalloproteinase-disintegrin",
+		"name": "Zinc metalloproteinase/disintegrin",
 		"cd": 4,
 		"group": 0,
 		"v": 13249.37067
