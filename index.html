@@ -145,7 +145,7 @@ var width = 1200,
             .attr("r", function(d) {if (d.v>=10000) {return 7.5+Math.log(d.v)} else {return 6+Math.log(d.v);} })//r of circle nodes based on data.
             .style("fill", function(d) { return d.colour= colour(d.cd); }) //colour of circle nodes based on data.
             .style("stroke", function(d) { if (d.group<=0) {return "red"};  })
-            .style("stroke-width", 1.5)
+            .style("stroke-width", 2.0)
             .on("dblclick", dblclick)
             .call(force.drag);
    
