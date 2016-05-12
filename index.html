@@ -125,7 +125,7 @@ var width = 1200,
         .start();
   var colour =d3.scale.category20c()
         .domain(["5","4","3","2","1",])
-        .range(["#08519c", "#3182bd", "#6baed6", "#bdd7e7", "#ffffb2"]);
+        .range(["#08519c", "#3182bd", "#6baed6", "#bdd7e7", "#ffffcc"]);
    
     var link = svg.selectAll(".link")
         .data(graph.links)
@@ -183,7 +183,7 @@ var width = 1200,
     });
     // Add a legend for the size of the circles
    var dataSet = [
-      {"legendLabel":"-2.00 to -1.51", "magnitude":"<1", "colour":"#ffffb2","radius":10}, 
+      {"legendLabel":"-2.00 to -1.51", "magnitude":"<1", "colour":"#ffffcc","radius":10}, 
       {"legendLabel":"-1.50 to -1.01", "magnitude":"<10", "colour":"#bdd7e7","radius":100}, 
       {"legendLabel":"-1.00 to -0.51", "magnitude":"<100", "colour":"#6baed6","radius":10000}, 
       {"legendLabel":"-0.50 to -0.01", "magnitude":"<1000", "colour":"#3182bd","radius":100000}, 
