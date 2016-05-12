@@ -125,7 +125,7 @@ var width = 1200,
         .start();
   var colour =d3.scale.category20c()
         .domain(["5","4","3","2","1",])
-        .range(["black", "blue", "cyan", "green", "orange"]);
+        .range(["#006d2c", "#31a354", "#74c476", "#bae4b3", "#edf8e9"]);
    
     var link = svg.selectAll(".link")
         .data(graph.links)
@@ -183,11 +183,11 @@ var width = 1200,
     });
     // Add a legend for the size of the circles
    var dataSet = [
-      {"legendLabel":"-2.00 to -1.51", "magnitude":"<1", "colour":"orange","radius":10}, 
-      {"legendLabel":"-1.50 to -1.01", "magnitude":"<10", "colour":"green","radius":100}, 
-      {"legendLabel":"-1.00 to -0.51", "magnitude":"<100", "colour":"cyan","radius":10000}, 
-      {"legendLabel":"-0.50 to -0.01", "magnitude":"<1000", "colour":"blue","radius":100000}, 
-      {"legendLabel":"0.00 to 0.50", "magnitude":"<10000", "colour": "black","radius":10000000}, 
+      {"legendLabel":"-2.00 to -1.51", "magnitude":"<1", "colour":"#edf8e9","radius":10}, 
+      {"legendLabel":"-1.50 to -1.01", "magnitude":"<10", "colour":"#bae4b3","radius":100}, 
+      {"legendLabel":"-1.00 to -0.51", "magnitude":"<100", "colour":"#74c476","radius":10000}, 
+      {"legendLabel":"-0.50 to -0.01", "magnitude":"<1000", "colour":"#31a354","radius":100000}, 
+      {"legendLabel":"0.00 to 0.50", "magnitude":"<10000", "colour": "#006d2c","radius":10000000}, 
       ];
 
 
@@ -243,7 +243,7 @@ var width = 1200,
         .attr("cy", 200)
         .attr("r", function(d){return Math.log(d.radius); })
         .attr("padding",5)
-        .style("fill", function(d) {return d.colour; })
+        .style("fill", "#cccccc"
         .style("stroke", "black");
 
       legend2.append("text")
