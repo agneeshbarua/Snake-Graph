@@ -72,7 +72,7 @@
 	}, {
 		"name": "Basic phospholipase A2 homolog G6K49-like",
 		"cd": 4,
-		"group": 1,
+		"group": 0,
 		"v": 43.27533333
 	}, {
 		"name": "Zinc metalloproteinase-disintegrin-like ACLD",
@@ -137,7 +137,7 @@
 	}, {
 		"name": "Basic phospholipase A2 homolog G6K49-like",
 		"cd": 4,
-		"group": 1,
+		"group": 0,
 		"v": 43.27533333
 	}, {
 		"name": "cytochrome P450 2C20-like",
