@@ -257,13 +257,13 @@
 	}, {
 		"name": "proline dehydrogenase 1, mitochondrial-like",
 		"cd": 4,
-		"group": 19.7273333,
-		"v": 7
+		"group": 1,
+		"v": 19.7273333
 	}, {
 		"name": "proline dehydrogenase 1, mitochondrial-like",
 		"cd": 4,
-		"group": 7.1263333,
-		"v": 7
+		"group": 1,
+		"v":7.1263333
 	}, {
 		"name": "snaclec jerdonibitin subunit alpha",
 		"cd": 4,
